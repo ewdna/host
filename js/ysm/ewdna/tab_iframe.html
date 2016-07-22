@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+ </head>
+
+ <body>
+   <div id="show_ad"></div>
+   <script type="text/javascript">
+     var thisParameter=decodeURIComponent(document.location.toString());
+     var sfysmad_tab_index="1";
+     if(thisParameter.indexOf("?")!=-1) {
+	    var sfysmad_tab_ary=thisParameter.split("?")[1].split("#")[0].split("&");
+	    for(var sf_i in sfysmad_tab_ary) {
+		    var sfysmad_tab_str=sfysmad_tab_ary[sf_i].split("=")[0];
+		    if(sfysmad_tab_str == "index") {sfysmad_tab_index = sfysmad_tab_ary[sf_i].split("=")[1];}
+	    }
+     }
+     $("#show_ad").html('<div name="sfysmad" data="ewdna_tab_content_'+sfysmad_tab_index+'" count="3"></div>');
+   </script>   
+   <script type="text/javascript" src="https://googledrive.com/host/0B9q5yIkIXTXFblE4VF9ydlBlTTQ/ysm/ewdna/sf_ysm.js" id="sf_script" slot="Ewdna_tab"></script>
+ </body>
+</html>
