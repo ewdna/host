@@ -1,0 +1,54 @@
+﻿<html>
+	<head>
+	
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Online UrlEncoder</title>
+		
+		<script type="text/javascript">
+			function enURIC(){
+				var string = document.getElementById("input").value;
+				document.getElementById("output").value = encodeURIComponent(string);
+			}
+			
+			function deURIC(){
+				var string = document.getElementById("input").value;
+				document.getElementById("output").value = decodeURIComponent(string);
+			}
+			
+			function enURI(){
+				var string = document.getElementById("input").value;
+				document.getElementById("output").value = encodeURI(string);
+			}
+			
+			function deURI(){
+				var string = document.getElementById("input").value;
+				document.getElementById("output").value = decodeURI(string);
+			}
+			
+			function enCAPE(){
+				var string = document.getElementById("input").value;
+				document.getElementById("output").value = escape(string);
+			}
+			
+			function deCAPE(){
+				var string = document.getElementById("input").value;
+				document.getElementById("output").value = unescape(string);
+			}
+		</script>
+	</head>
+	
+	<body>
+		
+		在輸入框輸入需要轉換的文字，再選擇按鈕進行編碼或解碼</br>
+		<input type="text" id="input" value="" size="60" /></br>
+		<input type="text" id="output" value="" size="60" readonly="true" /></br>
+		編碼解碼說明請參考：<a href="http://werdna1222coldcodes.blogspot.com/2008/12/javascriptescape-encodeuri.html">用Javascript替中文轉碼</a></br>
+		<input type="button" value="encodeURIComponent" size="20" onclick="enURIC();" />
+		<input type="button" value="encodeURI" size="20" onclick="enURI();" />
+		<input type="button" value=" escape " size="20" onclick="enCAPE();" /></br>
+		<input type="button" value="decodeURIComponent" onclick="deURIC();" />
+		<input type="button" value="decodeURI" onclick="deURI();" />
+		<input type="button" value="unescape" onclick="deCAPE();" /></br>
+	
+	</body>
+</html>
