@@ -4,7 +4,7 @@
 			time = $.now() - 10;
 			ditgits = Math.floor(((Math.random()+1) * 1000000) % 1000000);
 			redirect = url + "RID=C1289386-t" + time + ditgits;
-			redirect = url + "RID=C1289386-t1494214333156117913";
+			redirect = url + "RID=C1289386-t1495543664635580671";
 			
 			$("#a").attr('href', redirect);
 			window.location.replace(redirect);
