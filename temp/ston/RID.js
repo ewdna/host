@@ -5,7 +5,7 @@
 			ditgits = Math.floor(((Math.random()+1) * 1000000) % 1000000);
 			// redirect = url + "RID=C1289386-t" + time + ditgits;
 			// redirect = url + "RID=C1289386-t1499480998827485200";
-			redirect = url + "partner=SHB&rid=1027fa0f1d30491de8d0180eb27cc5";
+			redirect = url + "partner=SHB&rid=1029f98fcf59f7e0df9b2404f6c577";
 			
 			$("#a").attr('href', redirect);
 			window.location.replace(redirect);
