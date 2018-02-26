@@ -3,8 +3,17 @@
 	<meta charset="UTF-8" />
 </head>
 <body>
-	Redirecting...
 	<img width="1" style="display:none;"
 		src="http://www.books.com.tw/exep/assp.php/books_werdna/activity/memday/0000000001.png" />
+	<img id="books_img" src='https://www.books.com.tw/exep/assp.php/books_werdna/csss/images/shoppingcar.gif' />
+
+	<script>
+		var books_img = document.getElementById("books_img");
+		if (books_img.src.endsWith("gif")) {
+			books_img.src += "?" + Date.now();
+			// books_img.src += "?" + Math.floor(((Math.random()+1) * 10) % 5);
+		}
+	</script>
+
 </body>
 </html>
