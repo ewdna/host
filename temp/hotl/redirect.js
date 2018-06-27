@@ -2,7 +2,10 @@
 
 		$(document).ready( function() {
 			// hotels.com 固定獎金
-			redirect = "https://vbtrax.com/track/clicks/1096/c627c2b8980323dffc9cbd2e8d2b891473624ecf71ecf0ab416db3056e02?t=" + url;
+			// redirect = "https://vbtrax.com/track/clicks/1096/c627c2b8980323dffc9cbd2e8d2b891473624ecf71ecf0ab416db3056e02?t=" + url;
+			
+			// hotels.com 分潤獎金
+			redirect = "https://vbtrax.com/track/clicks/2627/c627c2b8910029dcf09cbd2e8d2b891473624ecf71ecf0ab416db0036503?t=" + url;
 			
 			$("#a").attr('href', redirect);
 			window.location.replace(redirect);
