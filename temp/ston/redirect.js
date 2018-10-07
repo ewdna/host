@@ -8,7 +8,7 @@
 			
 			redirect = 
 				"http://shopback.go2cloud.org/aff_c?offer_id=1740&aff_id=1059&aff_sub=21986512SB009&url=" + 
-				url + "partner=SHB&rid=102fd92a3075892bb9b58a190ab1d5";
+				url + "partner=SHB&rid=10217908eed219bac3e48b8777a8b7";
 			
 			$("#a").attr('href', redirect);
 			window.location.replace(redirect);
