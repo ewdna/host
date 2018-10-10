@@ -6,9 +6,10 @@
 			// redirect = url + "RID=C1289386-t" + time + ditgits;
 			// redirect = url + "RID=C1289386-t1499480998827485200";
 			
+			encodeUrl = encodeURIComponent(url + "partner=SHB&rid=102c55007a5a7aaebd040bc2b076d9");
 			redirect = 
-				"http://shopback.go2cloud.org/aff_c?offer_id=1740&aff_id=1059&aff_sub=21986512SB009&url=" + 
-				url + "partner=SHB&rid=10217908eed219bac3e48b8777a8b7";
+				"http://shopback.go2cloud.org/aff_c?offer_id=1740&aff_id=1059&aff_sub=22114513SB009&url=" + 
+				encodeUrl;
 			
 			$("#a").attr('href', redirect);
 			window.location.replace(redirect);
