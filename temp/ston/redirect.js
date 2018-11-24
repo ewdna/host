@@ -6,9 +6,9 @@
 			// redirect = url + "RID=C1289386-t" + time + ditgits;
 			// redirect = url + "RID=C1289386-t1499480998827485200";
 			
-			encodeUrl = encodeURIComponent(url + "partner=SHB&rid=102e316daeaf830270bb28c5694bc5");
+			encodeUrl = encodeURIComponent(url + "partner=SHB&rid=102888dcd5744f97808130b17858f3");
 			redirect = 
-				"http://shopback.go2cloud.org/aff_c?offer_id=1740&aff_id=1059&aff_sub=22901445SB009&url=" + 
+				"http://shopback.go2cloud.org/aff_c?offer_id=1740&aff_id=1059&aff_sub=23509420SB009&url=" + 
 				encodeUrl;
 			
 			$("#a").attr('href', redirect);
