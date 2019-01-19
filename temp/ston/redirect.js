@@ -8,7 +8,7 @@
 			
 			encodeUrl = encodeURIComponent(url + "partner=SHB&rid=102888dcd5744f97808130b17858f3");
 			redirect = 
-				"http://shopback.go2cloud.org/aff_c?offer_id=1740&aff_id=1059&aff_sub=24955175SB009&url=" + 
+				"http://shopback.go2cloud.org/aff_c?offer_id=1740&aff_id=1059&aff_sub=25247634SB009&url=" + 
 				encodeUrl;
 			
 			$("#a").attr('href', redirect);
