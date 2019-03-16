@@ -32,10 +32,5 @@ if (url) {
 			$("#a").attr('href', redirect);
 			window.location.replace(redirect);
 		});
-
-		$("#a").on('click', function (e) {
-			e.preventDefault();
-			window.location.replace(redirect);
-		});
 	} 
 }

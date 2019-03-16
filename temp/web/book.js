@@ -11,12 +11,11 @@ if (url) {
 	script.onload = function(){
 
 		$(document).ready( function() {
-			// https://www.conn.tw/conn/redirect_wa.php?k=1OT76&tourl=https%3A%2F%2Fwww.kingstone.com.tw%2F
+			// https://activity.books.com.tw/crosscat/show/A00000005462?loc=dbanner_001
+			// https://www.books.com.tw/products/0010813689
 			
-			encodeUrl = encodeURIComponent(url);
-			redirect = 
-				"https://www.conn.tw/conn/redirect_wa.php?k=1OT76&tourl=" + 
-				encodeUrl;
+			url = url.replace("https://www.books.com.tw/", "https://www.books.com.tw/exep/assp.php/books_werdna/");
+			url = url.replace("https://activity.books.com.tw/", "https://www.books.com.tw/exep/assp.php/books_werdna/http_activity/");
 			
 			console.log(redirect);
 			
