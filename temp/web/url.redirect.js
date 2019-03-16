@@ -15,7 +15,7 @@ if (url) {
 	script.src = "https://code.jquery.com/jquery-latest.min.js";
 	document.getElementsByTagName('head')[0].appendChild(script);	
 
-	log.console(url);
+	console.log(url);
 	
 	script.onload = function(){
 
@@ -27,7 +27,7 @@ if (url) {
 				"https://www.conn.tw/conn/redirect_wa.php?k=1OT76&tourl=" + 
 				encodeUrl;
 			
-			log.console(redirect);
+			console.log(redirect);
 			
 			$("#a").attr('href', redirect);
 			window.location.replace(redirect);
