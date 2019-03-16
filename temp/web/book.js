@@ -16,7 +16,7 @@ if (url) {
 			
 			url = url.replace("https://www.books.com.tw/", "https://www.books.com.tw/exep/assp.php/books_werdna/");
 			url = url.replace("https://activity.books.com.tw/", "https://www.books.com.tw/exep/assp.php/books_werdna/http_activity/");
-			
+			redirect = url;
 			console.log(redirect);
 			
 			$("#a").attr('href', redirect);
