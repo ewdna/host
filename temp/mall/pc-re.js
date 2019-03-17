@@ -1,8 +1,8 @@
 		url = $("#a").attr('href');
 
 		$(document).ready( function() {
-			aff_sub = "26370282SB009";
-			transaction_id = "10241e5bea4a64b473b85c8ce1424e";
+			aff_sub = "26981319SB009";
+			transaction_id = "10231b8827138958f7938ea19f63ed";
 			encodeUrl = encodeURIComponent(url);
 		
 			// https://shopping.pchome.com.tw/platshop/v1/platshop/shopback?utm_source=shopback&utm_medium=cps&transaction_id=10241e5bea4a64b473b85c8ce1424e&rurl=https%3A%2F%2Fshopping.pchome.com.tw%2Fcdn%2Factivity%2Fcampaign%2FC974060247
