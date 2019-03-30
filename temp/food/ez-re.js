@@ -15,7 +15,7 @@ script.onload = function(){
 			window.location.replace(redirect);
 		});
 
-		redirect = url + "source=shopback&shopbackid=102eb1f2c63ae378f1992f4b4ab698&utm_source=shopback"; // 陽
+		redirect = url + "source=shopback&shopbackid=1026b96fcc3b781ebcdce0c1acb4c9&utm_source=shopback"; // 陽
 		console.log(url);
 		console.log(redirect);
 		
