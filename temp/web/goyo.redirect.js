@@ -28,7 +28,11 @@ $(document).ready(
 			return "yahoo-mall";
 		} else if (url.indexOf('kingstone.com') >= 0) {
 			return "kingstone";
+		} else if (url.indexOf('rakuten.com') >= 0) {
+			return "rakuten";
 		}
+		
+		
 	}
 
 $("#a").on('click', function (e) {
