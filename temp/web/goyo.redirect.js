@@ -30,6 +30,8 @@ $(document).ready(
 			return "kingstone";
 		} else if (url.indexOf('rakuten.com') >= 0) {
 			return "rakuten";
+		} else if (url.indexOf('udn.com') >= 0) {
+			return "udn";
 		}
 		
 		
