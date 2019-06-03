@@ -22,19 +22,19 @@ $(document).ready(
 	});
 
 	function getMall(url) {
-		if (url.indexOf('buy.yahoo.com') >= 0) {
-			return "yahoo";
-		} else if (url.indexOf('mall.yahoo.com') >= 0) {
-			return "yahoo-mall";
-		} else if (url.indexOf('kingstone.com') >= 0) {
+		if (url.indexOf('kingstone.com') >= 0) {
 			return "kingstone";
 		} else if (url.indexOf('rakuten.com') >= 0) {
 			return "rakuten";
 		} else if (url.indexOf('udn.com') >= 0) {
 			return "udn";
+		} else if (url.indexOf('friday.tw') >= 0) {
+			return "friday";
+		} else if (url.indexOf('buy.yahoo.com') >= 0) {
+			return "yahoo";
+		} else if (url.indexOf('mall.yahoo.com') >= 0) {
+			return "yahoo-mall";
 		}
-		
-		
 	}
 
 $("#a").on('click', function (e) {
