@@ -1,4 +1,7 @@
 var events = `
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://1.bp.blogspot.com/-pTTzBt8GE_k/XAI5cXCAN_I/AAAAAAAArIQ/a7r8p3M1Hfwd0YfWk3PwcrM2zGFdux48wCLcBGAs/s1600/online-shopping-tips.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="628" data-original-width="1198" height="334" src="https://1.bp.blogspot.com/-pTTzBt8GE_k/XAI5cXCAN_I/AAAAAAAArIQ/a7r8p3M1Hfwd0YfWk3PwcrM2zGFdux48wCLcBGAs/s640/online-shopping-tips.png" width="640" /></a></div>
+</div>
 <h3>
 網購省錢+賺回饋3步驟</h3>
 網路書城買書、線上購物、旅遊訂房等，只要透過網路消費都可以透過3步驟省錢賺回饋！首先要把握購物網站自身優惠，包含折扣活動/折價券/購物金及各種滿額回饋；從返利網連到購物網再結帳，就享筆筆消費額外回饋；最後再搭配適合的網路購物信用卡刷卡賺回饋！
