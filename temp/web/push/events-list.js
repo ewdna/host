@@ -42,7 +42,7 @@ var events = `
 <ul>
 <li><a href="https://www.ewdna.com/2017/11/referral-card.html" target="_blank"><span style="color: blue;"><b>【相揪賺好康】開戶/信用卡推薦方案優惠大全(持續更新)！</b></span></a></li>
 </ul>
-<iframe height="2500" src="https://docs.google.com/spreadsheets/d/1uZpnh7yvWcviSyPYv-z4kGUufq2Utv3yBlpluYtUMGY/pubhtml?gid=1840752663&amp;single=false&amp;widget=true&amp;headers=false" width="640"></iframe>
+<iframe height="2500" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQEtgxKt-1kaxNWIBP3pRpoIlcYXlj325_CfF3msJp8GP_mSb9DPyfyVvCRxXJWi5X0JgbSagMFltvP/pubhtml?gid=1840752663&amp;single=false&amp;widget=true&amp;headers=false" width="640"></iframe>
 
 <h4>
 國內食衣住行/國外留學遊學必備服務推薦碼優惠</h4>
