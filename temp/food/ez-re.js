@@ -15,7 +15,8 @@ script.onload = function(){
 			window.location.replace(redirect);
 		});
 
-		redirect = url + "source=shopback&shopbackid=102341a8dadb2382eb360992892909&utm_source=shopback"; // 陽
+		// redirect = url + "source=shopback&shopbackid=102341a8dadb2382eb360992892909&utm_source=shopback"; // shopback
+		redirect = url + "utm_source=blogger2019&utm_medium=EZ_ewdna"; // ez
 		console.log(url);
 		console.log(redirect);
 		
