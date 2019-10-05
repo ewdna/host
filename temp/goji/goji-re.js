@@ -4,7 +4,7 @@ document.getElementsByTagName('head')[0].appendChild(jquery);
 
 jquery.onload = function(){
     var script = document.createElement('script');
-	// script.src = "goji-shopback.js";
-	script.src = "goji-push.js";
+	script.src = "goji-shopback.js";
+	// script.src = "goji-push.js";
 	document.getElementsByTagName('head')[0].appendChild(script);	
 } 
