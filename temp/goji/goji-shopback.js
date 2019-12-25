@@ -1,8 +1,8 @@
 url = $("#a").attr('href');
 
 $(document).ready( function() {
-	aff_sub = "41751105SB009";
-	transaction_id = "1026e7813048b2cd1942ef1ce5d607";
+	aff_sub = "54799762SB009";
+	transaction_id = "102763bdecb4dfe1683175e702d8e7";
 
 	// https://www.gomaji.com/ref_shopback_entry.php?ref=543&transaction_id=
 	// &ref=543&transaction_id=102da3d8538f4fa35f8ccc90fb1407
