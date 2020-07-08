@@ -1,0 +1,30 @@
+<html>
+<head>
+	<!-- 轉址 -->
+	<meta charset="UTF-8" />
+</head>
+	<body>
+		<a target="_blank" href="https://google.com/">Google</a><br>
+		<a target="_blank" href="https://www.ewdna.com/">ewdna</a><br>
+		<a target="_blank" href="https://g.ewdna.com/card/ubot-line.html">https://g.ewdna.com/card/ubot-line.html</a><br>
+
+		<script>
+			function fixTool(){
+				var links = document.getElementsByTagName('a');
+				var regex = /g.ewdna.com\//;
+
+				for(var i=0; i<links.length; i++){
+
+					// console.log(links[i].href);
+					// console.log(links[i].href.match(regex));
+					if(links[i].href.match(regex)){
+						// console.log(links[i]);
+						links[i].href = links[i].href.replace(regex,'storage.googleapis.com/ewgit/temp/');
+						console.log(links[i]);	
+					}
+				}
+			}
+			fixTool();
+		</script>
+	</body>
+</html>
