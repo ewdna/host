@@ -6,7 +6,7 @@ jquery.onload = function(){
     var script = document.createElement('script');
 	// script.src = "ston-shopback.js";
 	// script.src = "ston-goyo.js";
-	script.src = "../web/goyo.redirect.js";
-	// script.src = "../web/conn.redirect.js";
+	// script.src = "../web/goyo.redirect.js";
+	script.src = "../web/conn.redirect.js";
 	document.getElementsByTagName('head')[0].appendChild(script);	
 } 
