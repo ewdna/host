@@ -20,7 +20,7 @@ if (url) {
 			
 			console.log(redirect);
 			
-			$("#a").attr('href', redirect);
+			$("a:first").attr('href', redirect);
 			window.location.replace(redirect);
 		});
 	} 
