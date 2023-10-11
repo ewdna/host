@@ -1,5 +1,5 @@
 var search = location.search;
-var redirect = "https://card.rakuten.com.tw/corp/campaign/";
+var redirect = "https://www.card.rakuten.com.tw/corp/campaign/";
 
 if (search) {
 	var code = search.substr(6);
