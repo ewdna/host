@@ -4,7 +4,7 @@ var redirect = "https://card.rakuten.com.tw/corp/campaign/";
 if (search) {
 	var code = search.substr(6);
 	if (code) {
-		redirect = "https://card.rakuten.com.tw/corp/campaign/cpn.xhtml?code=" + code;
+		redirect = "https://www.card.rakuten.com.tw/corp/campaign/cpn.xhtml?code=" + code;
 	}
 }
 
