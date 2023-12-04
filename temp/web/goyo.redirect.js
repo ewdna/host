@@ -10,8 +10,8 @@ $(document).ready(
 		
 		encodeUrl = encodeURIComponent(url);
 		redirect = 
-			// "https://www.goyomoney.com.tw/malls/yahoo/referral?url="
-			"https://www.goyomoney.com.tw/malls/" + mallShort + "/referral?url="
+			// "https://www.goyomoney.com.tw/malls/cashback/yahoo/referral?url="
+			"https://www.goyomoney.com.tw/malls/cashback/" + mallShort + "/referral?url="
 			+ encodeUrl
 			+ "&device=pc_web&skipCountDown=true&skipAuth=true&utm_source=gym&utm_medium=blogger&utm_campaign=20898";
 		
