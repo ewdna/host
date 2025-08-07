@@ -1,34 +1,30 @@
 url = $("#a").attr('href');
 
-$(document).ready( function() {
-	aff_sub = "0me0nt0ae018npsdSB009";
-	transaction_id = "1026e4fc4bf1d9fb68a3e330bd46c8";
-	encodeUrl = encodeURIComponent(url);
+$(document).ready(function () {
+	let aff_sub = "0me0p9dab018npstSB009";
+	let transaction_id = "102b562b09263de22f33ebbe81965c";
 
-	// https://shopping.pchome.com.tw/platshop/v1/platshop/shopback?utm_source=shopback&utm_medium=cps&transaction_id=10241e5bea4a64b473b85c8ce1424e&rurl=https%3A%2F%2Fshopping.pchome.com.tw%2Fcdn%2Factivity%2Fcampaign%2FC974060247
-	// https://shopping.pchome.com.tw/platshop/v1/platshop/shopback?utm_source=shopback&utm_medium=cps&transaction_id=10241e5bea4a64b473b85c8ce1424e&rurl=https%3A%2F%2Fshopping.pchome.com.tw%2Fedm%2Fcard%2Fregister%2FR43081954.htm
-	pcTargetUrl = "https://shopping.pchome.com.tw/platshop/v1/platshop/shopback/home-24h?utm_source=shopback&utm_medium=cps&transaction_id="
-		+ transaction_id + "&rurl=" + encodeUrl;
-	encodePcTargetUrl = encodeURIComponent(pcTargetUrl);
+	// 取得原始 URL
+	let url = $("#a").attr('href');
 
-	// http://shopback.go2cloud.org/aff_c?offer_id=2396&aff_id=1059&url=https%3A%2F%2Fshopping.pchome.com.tw%2Fplatshop%2Fv1%2Fplatshop%2Fshopback%3Futm_source%3Dshopback%26utm_medium%3Dcps%26transaction_id%3D%7Btransaction_id%7D%26rurl%3Dhttps%253A%252F%252Fshopping.pchome.com.tw%252Fcdn%252Factivity%252Fcampaign%252FC974060247&aff_sub=26370282SB009
-	// http://shopback.go2cloud.org/aff_c?offer_id=2396&aff_id=1059&url=https%3A%2F%2Fshopping.pchome.com.tw%2Fplatshop%2Fv1%2Fplatshop%2Fshopback%3Futm_source%3Dshopback%26utm_medium%3Dcps%26transaction_id%3D10241e5bea4a64b473b85c8ce1424e%26rurl%3Dhttps%253A%252F%252Fshopping.pchome.com.tw%252Fedm%252Fcard%252Fregister%252FR43081954.htm&aff_sub=26370282SB009
-	redirect = "http://shopback.go2cloud.org/aff_c?offer_id=2396&aff_id=1059&url=" 
-		+ encodePcTargetUrl + "&aff_sub=" + aff_sub;
+	// 在原始網址後加上 utm 參數與 transaction_id
+	let utmUrl = new URL(url);
+	utmUrl.searchParams.set("utm_source", "shopback");
+	utmUrl.searchParams.set("utm_medium", "cps");
+	utmUrl.searchParams.set("transaction_id", transaction_id);
 
-	/*
-	console.log(url);
-	console.log(encodeUrl);	
-	console.log(pcTargetUrl);	
-	console.log(encodePcTargetUrl);	
-	console.log(redirect);	
-	*/
-		
+	// 將 utmUrl 編碼後當作參數塞入 shopback redirect URL
+	let redirect = "https://shopback.go2cloud.org/aff_c?offer_id=2396&aff_id=1059&url="
+		+ encodeURIComponent(utmUrl.toString())
+		+ "&aff_sub=" + aff_sub;
+
+	// 設定 <a> 的 href，並立即跳轉
 	$("#a").attr('href', redirect);
 	window.location.replace(redirect);
 });
 
+// 防止點擊時重複導向處理
 $("#a").on('click', function (e) {
 	e.preventDefault();
-	window.location.replace(redirect);
+	window.location.replace($(this).attr('href'));
 });
