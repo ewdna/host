@@ -1,13 +1,13 @@
 url = $("#a").attr('href');
 
 $(document).ready( function() {
-	aff_sub = "64877852SB009";
-	transaction_id = "102293e68cfc8288cc8e2ac41cec29";
+	aff_sub = "0me0nt0ae018npsdSB009";
+	transaction_id = "1026e4fc4bf1d9fb68a3e330bd46c8";
 	encodeUrl = encodeURIComponent(url);
 
 	// https://shopping.pchome.com.tw/platshop/v1/platshop/shopback?utm_source=shopback&utm_medium=cps&transaction_id=10241e5bea4a64b473b85c8ce1424e&rurl=https%3A%2F%2Fshopping.pchome.com.tw%2Fcdn%2Factivity%2Fcampaign%2FC974060247
 	// https://shopping.pchome.com.tw/platshop/v1/platshop/shopback?utm_source=shopback&utm_medium=cps&transaction_id=10241e5bea4a64b473b85c8ce1424e&rurl=https%3A%2F%2Fshopping.pchome.com.tw%2Fedm%2Fcard%2Fregister%2FR43081954.htm
-	pcTargetUrl = "https://shopping.pchome.com.tw/platshop/v1/platshop/shopback?utm_source=shopback&utm_medium=cps&transaction_id="
+	pcTargetUrl = "https://shopping.pchome.com.tw/platshop/v1/platshop/shopback/home-24h?utm_source=shopback&utm_medium=cps&transaction_id="
 		+ transaction_id + "&rurl=" + encodeUrl;
 	encodePcTargetUrl = encodeURIComponent(pcTargetUrl);
 
