@@ -1,10 +1,15 @@
-var jquery = document.createElement('script');
-jquery.src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js";
-document.getElementsByTagName('head')[0].appendChild(jquery);	
+(function () {
+    // 動態載入 redirect.js，並可自由切換路徑
+    function loadRedirectScript(src) {
+        var script = document.createElement('script');
+        script.src = src;
+        script.async = true; // 非同步載入
+        document.head.appendChild(script);
+    }
 
-jquery.onload = function(){
-    var script = document.createElement('script');
-	script.src = "../web/conn.redirect.js";
-	// script.src = "../web/pure.redirect.js";
-	document.getElementsByTagName('head')[0].appendChild(script);	
-} 
+    // ===== 自行選擇要載入的 redirect.js =====
+	loadRedirectScript("../web/book.redirect.js");
+    // loadRedirectScript("../web/conn.redirect.js");
+    // loadRedirectScript("../web/pure.redirect.js");
+    // =========================================
+})();
