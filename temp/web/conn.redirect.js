@@ -1,25 +1,22 @@
-var script = document.createElement('script');
-script.src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js";
-document.getElementsByTagName('head')[0].appendChild(script);	
+(function () {
+    document.addEventListener("DOMContentLoaded", function () {
+        var link = document.getElementById("a");
+        if (!link) return; // 找不到元素就直接結束
 
-script.onload = function(){
-    url = $("#a").attr('href');
+        var originalHref = link.getAttribute("href");
+        var redirectUrl = "https://www.conn.tw/conn/redirect_wa.php?k=1OT76&tourl=" +
+                          encodeURIComponent(originalHref);
 
-	$(document).ready( function() {
-		// https://www.conn.tw/conn/redirect_wa.php?k=1OT76&tourl=https%3A%2F%2Fwww.kingstone.com.tw%2F
-		
-		encodeUrl = encodeURIComponent(url);
-		redirect = 
-			"https://www.conn.tw/conn/redirect_wa.php?k=1OT76&tourl=" + 
-			encodeUrl;
-		
-		$("#a").attr('href', redirect);
-		window.location.replace(redirect);
-	});
+        // 更新超連結 href
+        link.setAttribute("href", redirectUrl);
 
-	$("#a").on('click', function (e) {
-		e.preventDefault();
-		window.location.replace(redirect);
-	});
-} 
+        // 立即跳轉
+        window.location.replace(redirectUrl);
 
+        // 攔截點擊事件，確保跳轉
+        link.addEventListener("click", function (e) {
+            e.preventDefault();
+            window.location.replace(redirectUrl);
+        });
+    });
+})();
