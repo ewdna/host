@@ -8,7 +8,7 @@
     }
 
     // ===== 自行選擇要載入的 redirect.js =====
-	loadRedirectScript("../web/book.redirect.js");
-    // loadRedirectScript("mm-point.js");
+	// loadRedirectScript("../web/book.redirect.js");
+    loadRedirectScript("mm-point.js");
     // =========================================
 })();
