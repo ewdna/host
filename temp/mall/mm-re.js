@@ -1,14 +1,14 @@
 (function () {
-    // 動態載入 redirect.js，並可自由切換路徑
     function loadRedirectScript(src) {
         var script = document.createElement('script');
         script.src = src;
-        script.async = true; // 非同步載入
+        script.async = true;
         document.head.appendChild(script);
     }
 
-    // ===== 自行選擇要載入的 redirect.js =====
-	// loadRedirectScript("../web/book.redirect.js");
+    // momo 使用自己的 redirect.js
     loadRedirectScript("mm-point.js");
-    // =========================================
+
+    // 若要改用其他（例如共用版本），只要改這裡即可
+    // loadRedirectScript("../web/book.redirect.js");
 })();
