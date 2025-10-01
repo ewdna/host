@@ -9,6 +9,6 @@
 
     // ===== 自行選擇要載入的 redirect.js =====
 	// loadRedirectScript("../web/book.redirect.js");
-    loadRedirectScript("../web/mm-point.js");
+    loadRedirectScript("mm-point.js");
     // =========================================
 })();
