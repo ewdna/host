@@ -3,7 +3,6 @@
     function loadRedirectScript(src) {
         var script = document.createElement('script');
         script.src = src;
-        script.async = true; // 非同步載入
         document.head.appendChild(script);
     }
 
