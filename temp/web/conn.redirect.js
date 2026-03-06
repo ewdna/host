@@ -1,22 +1,19 @@
 (function () {
-    document.addEventListener("DOMContentLoaded", function () {
-        var link = document.getElementById("a");
-        if (!link) return; // 找不到元素就直接結束
+    var link = document.getElementById("a");
+    if (!link) return;
 
-        var originalHref = link.getAttribute("href");
-        var redirectUrl = "https://www.conn.tw/conn/redirect_wa.php?k=1OT76&tourl=" +
-                          encodeURIComponent(originalHref);
+    var originalHref = link.getAttribute("href");
 
-        // 更新超連結 href
-        link.setAttribute("href", redirectUrl);
+    var redirectUrl =
+        "https://www.conn.tw/conn/redirect_wa.php?k=1OT76&tourl=" +
+        encodeURIComponent(originalHref);
 
-        // 立即跳轉
+    link.setAttribute("href", redirectUrl);
+
+    window.location.replace(redirectUrl);
+
+    link.addEventListener("click", function (e) {
+        e.preventDefault();
         window.location.replace(redirectUrl);
-
-        // 攔截點擊事件，確保跳轉
-        link.addEventListener("click", function (e) {
-            e.preventDefault();
-            window.location.replace(redirectUrl);
-        });
     });
 })();
